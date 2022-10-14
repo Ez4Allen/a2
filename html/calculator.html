@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>My cart </title>
+        <style>
+            body {
+                font-family: Arial;
+                background-color: #34495e;
+            }
+
+            .content {
+                background-color: rgb(17, 17, 16);
+                width: 300px;
+                padding: 40px;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                
+                color: white;
+            }
+
+            .item input {
+                display: block;
+                margin: 20px;
+
+            }            
+        </style>
+    </head>
+
+    <body>
+        <div class="content">
+            <h1>Here is my Cart</h1>
+
+            <form method ="POST" action="/process-cart" class="item"> 
+                <label for="items">Items</label>    
+                <input type="text" name="ItemName" id="ItemName"/>
+                <label for="price">Price</label>
+                <input type="text" name="Price" id="Price"/>
+                <input type="submit" value="Submit" />
+            </form>
+        </div>
+
+    </body>
+</html>
